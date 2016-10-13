@@ -23,7 +23,6 @@ module.exports = function(conn){
               expiresIn : 60 * 60 * 24 // expires in 24 hours
           });
           req.session.token = token;
-          console.log('TOKEN: ' + JSON.stringify(req.session));
           res.json({
               success: true,
               message: 'Enjoy your token!',

@@ -2,7 +2,6 @@ var jwt = require('jsonwebtoken');
 var secKey = require('./secret-key');
 
 module.exports = function(req, res, next){
-  console.log(req.url);
   if(req.url.indexOf('/api/users/') != -1 || req.url.indexOf('api/') == -1){
   			next();
 	}else{
