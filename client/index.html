@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/common.css">
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header">
+    <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand" href="#">Jan Aldrin Arciga</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-menubuilder">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Home</a>
+                    </li>
+                    <li><a href="#">Work Experience</a>
+                    </li>
+                    <li><a href="#">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="container" ng-app="index" ng-controller="controller">
+    <div class="row">
+      <div class="learn-container text-center">
+        <h2 class="learn-header">Learn Git and GitHub without any code!</h2>
+        <p class="learn-content">Using the Hello World guide, youll create a repository, start a branch,write comments, and open a pull request.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3"> </div>
+      <div class = "input-group col-xs-6">
+         <span class = "input-group-addon">@</span>
+         <input type = "text" class = "form-control" placeholder = "twitterhandle" ng-model="myInput" value = "{{myInput}}">
+      </div>
+      <div class="col-xs-3"/></div>
+    </div>
+    <div class="row">
+      <div class="btn-container text-center">
+        <button class="btn btn-primary" ng-click="myClick()"> Hi </button>
+        <button class="btn btn-default"> Hello </button>
+      </div>
+    </div>
+  </div>
+  <script src="/js/index.js"></script>
+</body>
+</html>

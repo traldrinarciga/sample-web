@@ -1,0 +1,10 @@
+.form-inline {
+  align-self: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.alert{
+  margin-top: 25px;
+  align-items: center;
+}

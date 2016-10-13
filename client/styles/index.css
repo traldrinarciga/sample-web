@@ -1,0 +1,47 @@
+.section {
+  background: black;
+}
+
+p {
+  text-indent: 15px;
+  font-size: 34px;
+}
+
+.green {
+  background-color: green;
+  height: 50px;
+}
+
+.blue {
+  background-color: blue;
+  height: 50px;
+}
+
+.learn-container{
+  border-color: blue;
+  border-width: 0px;
+  border-style: solid;
+}
+
+.learn-container .learn-header,
+.learn-container .learn-content {
+  text-align: center;
+}
+
+.learn-container .learn-content{
+  font-size: 24px;
+}
+
+.btn{
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+}
+
+.btn-container {
+  margin-top: 20px;
+  align-items:center;
+  border-color: blue;
+  border-width: 0px;
+  border-style: solid;
+}
